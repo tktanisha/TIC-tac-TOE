@@ -1,0 +1,126 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+  margin: 0;  
+  padding: 0;
+  font-family: 'poppins','sans-serif';
+}
+
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    /* background: rgb(228,171,201);
+    background: linear-gradient(220deg, rgba(228,171,201,0.7774480712166172) 21%, rgba(255,243,76,0.0801186943620178) 70%); */
+  background:  #132743;
+    /* display: flex;
+    justify-content: center;
+    align-items: start;*/
+
+    /* more accurate is to use grid ye humne jis format me likha h usi me center me place krega or sabhi content ko ek row me nhi krega jaise display:flex kr deta  */
+     display:grid;
+    place-items:center; /*isse ye hua ki ek grid center me aa gya jiski css set krne ke bad visible hoga*/
+
+    /* or by using grid;  alsp we can do the content in center
+    display:grid;
+    place-items:center;
+    
+    */
+
+
+
+}
+.game-info{
+    color:white;
+    position:absolute;
+    top:3rem;
+    left:50%;
+    transform:translate(-50%);
+    background-color:rgba(255,255, 255, 0.15) ;
+    border-radius: 1rem;
+    border: 1px solid rgba(255,255, 255, 0.25) ;
+    padding:0.5rem 3rem;
+    text-align: center;
+    /* border-color: ; */
+}
+
+.btn{
+    color:white;
+    border-radius: 1rem;
+    background-color:rgba(255,255, 255, 0.15) ;
+    border: 1px solid rgba(255,255, 255, 0.25) ;
+    padding:0.5rem 2rem;
+    text-align: center;
+    cursor: pointer;
+    display:none;/*starting me ye new game dikhega hi nhi badme ui me active hoga*/
+    
+}
+
+.btn.active{
+    display: flex;
+}
+
+.btn:hover{
+    background-color: rgba(255,255, 255, 0.25) ;
+}
+.win{
+    background-color: rgb(104, 158, 22);
+}
+
+.tic-tac-toe{
+margin-top: 5rem;
+    min-width: 19rem;
+    min-height: 19rem;
+    border-radius: 1rem;
+    background-color:rgba(255,255, 255, 0.15) ;
+    border: 1px solid rgba(255,255, 255, 0.25) ;
+    padding:2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.box{
+  position: relative;
+    width: 5rem;
+    aspect-ratio: 1/1;
+    cursor:pointer;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile1{
+    border-right:2px solid rgba(255,255, 255, 0.25)  ;
+    border-bottom:2px solid rgba(255,255, 255, 0.25)  ;
+}
+.tile2{
+    border-right:2px solid rgba(255,255, 255, 0.25)  ;
+    border-bottom:2px solid rgba(255,255, 255, 0.25)  ;
+}
+.tile3{
+    
+    border-bottom:2px solid rgba(255,255, 255, 0.25)  ;
+}
+.tile4{
+    border-right:2px solid rgba(255,255, 255, 0.25)  ;
+    border-bottom:2px solid rgba(255,255, 255, 0.25)  ;
+}
+.tile5{
+    border-right:2px solid rgba(255,255, 255, 0.25)  ;
+    border-bottom:2px solid rgba(255,255, 255, 0.25)  ;
+}
+.tile6{
+    
+    border-bottom:2px solid rgba(255,255, 255, 0.25)  ;
+}
+.tile7{
+    border-right:2px solid rgba(255,255, 255, 0.25)  ;
+   
+}
+.tile8{
+    border-right:2px solid rgba(255,255, 255, 0.25)  ;
+    
+}
+
