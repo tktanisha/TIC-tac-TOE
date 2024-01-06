@@ -5,11 +5,11 @@
 
 To play the game:
 
-1. Open the index.html file in your browser
-2. Player 1 will be X and will go first
-3. Take turns clicking on empty squares to place your marker (X or O)
-4. The first player to get 3 of their markers in a row vertically, horizontally or diagonally wins
-5. If all 9 squares are filled and neither player has 3 in a row, it's a draw
+1. Open the index.html file in your browser.
+2. Player 1 will be X and will go first.
+3. Take turns clicking on empty squares to place your marker (X or O).
+4. The first player to get 3 of their markers in a row vertically, horizontally or diagonally wins.
+5. If all 9 squares are filled and neither player has 3 in a row, it's a draw.
 
 ## Features
 
